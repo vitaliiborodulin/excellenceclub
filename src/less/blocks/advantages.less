@@ -1,0 +1,32 @@
+.advantages {
+	.row-flex();
+	justify-content: space-evenly;
+
+	&__item {
+		.col();
+		.size(4);
+		.size-xl(8);
+		.size-md(12);
+
+		margin-bottom: 23px;
+		padding: 29px 33px 25px 37px;
+		border: 2px solid @accent;
+
+		.md-block({
+			padding: 22px 33px 27px 21px;
+		});
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	&__descr {
+		font-size: 16px;
+		line-height: 1.85;
+		font-weight: 300;
+	}
+}
