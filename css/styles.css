@@ -817,12 +817,12 @@ input[type='submit'] {
 
   .posts__img {
     margin: 0 auto 13px;
-    width: 190px;
+    width: 300px;
     height: 300px;
   }
 
   .posts__img img {
-    width: 190px;
+    width: 300px;
     height: 300px;
   }
 
