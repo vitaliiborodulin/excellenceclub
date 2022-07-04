@@ -1,6 +1,6 @@
 $(function() {
     
-    const swiper = new Swiper('.swiper', {
+    const modelsSlider = new Swiper('.models-slider', {
     	// Optional parameters
     	loop: true,
     	slidesPerView: 1,
@@ -27,11 +27,11 @@ $(function() {
     	},
     });
     
-    $('.slider-button-prev').on('click', function(){
-    	swiper.slidePrev();
+    $('.models-button-prev').on('click', function(){
+    	modelsSlider.slidePrev();
     });
     
-    $('.slider-button-next').on('click', function(){
-    	swiper.slideNext();
+    $('.models-button-next').on('click', function(){
+    	modelsSlider.slideNext();
     });
 });

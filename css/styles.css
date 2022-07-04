@@ -184,6 +184,10 @@ body {
   text-align: center;
 }
 
+.single .models .section__title {
+  text-align: center;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
 
 *:focus:not(:focus-visible) {
@@ -295,20 +299,23 @@ input[type='submit'] {
           transform: rotate3d(0, 0, 1, -45deg);
 }
 
-.breadcrumbs {
+.breadcrumbs,
+.rank-math-breadcrumb {
   margin-bottom: 30px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 2.4;
   color: #727272;
 }
 
-.breadcrumbs a {
+.breadcrumbs a,
+.rank-math-breadcrumb a {
   color: inherit;
   text-decoration: none;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a:hover,
+.rank-math-breadcrumb a:hover {
   text-decoration: underline;
 }
 
@@ -437,33 +444,26 @@ input[type='submit'] {
   line-height: 2;
 }
 
-.slider {
+.models {
   padding-top: 53px;
   padding-bottom: 63px;
   background-color: #f5f5f5;
 }
 
-.slider .section__title {
+.models .section__title {
+  text-align: center;
   margin-bottom: 28px;
 }
 
-.slider__wrapper {
+.models__wrapper {
   position: relative;
 }
 
-.swiper {
-  width: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-}
-
-.swiper-img {
+.models__img {
   margin-bottom: 10px;
 }
 
-.swiper-text {
+.models__name {
   font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
@@ -471,16 +471,16 @@ input[type='submit'] {
   color: #b7a57e;
 }
 
-.swiper-link {
+.models__link {
   text-decoration: none;
 }
 
-.swiper-link:hover .swiper-text {
+.models__link:hover .swiper-text {
   text-decoration: underline;
 }
 
-.slider-button-prev,
-.slider-button-next {
+.models .models-button-prev,
+.models .models-button-next {
   position: absolute;
   width: 72px;
   height: 72px;
@@ -496,21 +496,29 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.slider-button-prev {
+.models .models-button-prev {
   left: -30px;
 }
 
-.slider-button-prev svg {
+.models .models-button-prev svg {
   margin-left: 10px;
 }
 
-.slider-button-next {
+.models .models-button-next {
   justify-content: flex-end;
   right: -30px;
 }
 
-.slider-button-next svg {
+.models .models-button-next svg {
   margin-right: 10px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
 }
 
 .map {
@@ -596,6 +604,11 @@ input[type='submit'] {
   font-size: 30px;
   line-height: 1;
   font-weight: 300;
+  min-height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .posts__descr {
@@ -622,6 +635,16 @@ input[type='submit'] {
 
 .home .posts {
   padding-top: 45px;
+}
+
+.post {
+  padding-top: 32px;
+  padding-bottom: 60px;
+}
+
+.feedback {
+  padding-top: 32px;
+  padding-bottom: 48px;
 }
 
 .footer {
@@ -685,12 +708,12 @@ input[type='submit'] {
     width: calc(66.66666666666667% - 30px);
   }
 
-  .swiper-text {
+  .models__name {
     font-size: 14px;
   }
 
-  .slider-button-prev,
-  .slider-button-next {
+  .models .models-button-prev,
+  .models .models-button-next {
     width: 34px;
     height: 34px;
     -webkit-transform: none;
@@ -698,11 +721,11 @@ input[type='submit'] {
     top: 103%;
   }
 
-  .slider-button-prev {
+  .models .models-button-prev {
     left: 45%;
   }
 
-  .slider-button-next {
+  .models .models-button-next {
     right: 45%;
   }
 
@@ -725,6 +748,13 @@ input[type='submit'] {
 
   .footer__menu {
     justify-content: center;
+    border-bottom: 1px solid #b7a57e;
+    margin-bottom: 26px;
+  }
+
+  .footer__menu a {
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
   }
 
   .footer__link {
@@ -743,6 +773,7 @@ input[type='submit'] {
 
   .posts__title {
     margin-bottom: 11px;
+    min-height: 48px;
     font-size: 24px;
   }
 
@@ -762,7 +793,8 @@ input[type='submit'] {
     display: flex;
   }
 
-  .breadcrumbs {
+  .breadcrumbs,
+  .rank-math-breadcrumb {
     margin-bottom: 15px;
   }
 
@@ -794,11 +826,11 @@ input[type='submit'] {
     margin-bottom: 25px;
   }
 
-  .slider-button-prev {
+  .models .models-button-prev {
     left: 30%;
   }
 
-  .slider-button-next {
+  .models .models-button-next {
     right: 30%;
   }
 
@@ -830,18 +862,18 @@ input[type='submit'] {
     padding-top: 16px;
   }
 
+  .post {
+    padding-top: 21px;
+    padding-bottom: 40px;
+  }
+
+  .feedback {
+    padding-top: 21px;
+    padding-bottom: 18px;
+  }
+
   .footer {
     padding: 32px 0;
-  }
-
-  .footer__menu {
-    border-bottom: 1px solid #b7a57e;
-    margin-bottom: 26px;
-  }
-
-  .footer__menu a {
-    margin-bottom: 20px;
-    letter-spacing: 0.1em;
   }
 
   .footer__tel {
