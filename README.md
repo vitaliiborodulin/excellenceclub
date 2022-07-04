@@ -1,3 +1,3 @@
 # excellence
 
-http://excellenceclub.net/
+https://excellenceclub.net/
