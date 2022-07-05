@@ -651,6 +651,10 @@ input[type='submit'] {
   padding-bottom: 48px;
 }
 
+.feedback__wrapper {
+  position: relative;
+}
+
 .feedback__img {
   margin: 0 auto;
   width: 287px;
@@ -670,6 +674,33 @@ input[type='submit'] {
   width: 253px;
   height: 526px;
   border-radius: 15px;
+}
+
+.feedback .feedback-button-prev,
+.feedback .feedback-button-next {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #b7a57e;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.feedback .feedback-button-prev {
+  left: -30px;
+}
+
+.feedback .feedback-button-next {
+  right: -30px;
 }
 
 .feedback .swiper {
@@ -900,6 +931,14 @@ input[type='submit'] {
   .feedback {
     padding-top: 21px;
     padding-bottom: 18px;
+  }
+
+  .feedback .feedback-button-prev {
+    left: -10px;
+  }
+
+  .feedback .feedback-button-next {
+    right: -10px;
   }
 
   .footer {

@@ -39,10 +39,10 @@ $(function() {
     	// loop: true,
     	slidesPerView: 1,
     	spaceBetween: 30,
-    	autoplay: {
-    		delay: 2500,
-    		disableOnInteraction: false,
-    	},
+    	// autoplay: {
+    	// 	delay: 2500,
+    	// 	disableOnInteraction: false,
+    	// },
     	breakpoints: {
     		678: {
     			slidesPerView: 2,
@@ -55,5 +55,16 @@ $(function() {
     		},
     	},
     });
-    $('.feedback__popup').fancybox();
+    
+    $('.feedback-button-prev').on('click', function(){
+    	feedbackSlider.slidePrev();
+    });
+    
+    $('.feedback-button-next').on('click', function(){
+    	feedbackSlider.slideNext();
+    });
+    $('[data-fancybox="feedback"]').fancybox({
+    	protect: true,
+    	transitionEffect: "zoom-in-out",
+    });
 });
