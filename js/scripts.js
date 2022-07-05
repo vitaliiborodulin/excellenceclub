@@ -34,4 +34,26 @@ $(function() {
     $('.models-button-next').on('click', function(){
     	modelsSlider.slideNext();
     });
+    
+    const feedbackSlider = new Swiper('.feedback-slider', {
+    	// loop: true,
+    	slidesPerView: 1,
+    	spaceBetween: 30,
+    	autoplay: {
+    		delay: 2500,
+    		disableOnInteraction: false,
+    	},
+    	breakpoints: {
+    		678: {
+    			slidesPerView: 2,
+    		},
+    		1010: {
+    			slidesPerView: 3,
+    		},
+    		1350: {
+    			slidesPerView: 4,
+    		},
+    	},
+    });
+    $('.feedback__popup').fancybox();
 });

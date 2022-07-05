@@ -7,6 +7,7 @@
 	<title>Отзывы</title>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -54,41 +55,45 @@
 		
 				<div class="feedback__wrapper">
 					<!-- Slider main container -->
-					<div class="swiper">
+					<div class="swiper feedback-slider">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
 							<div class="swiper-slide">
-								<a href="#" class="swiper-link">
-									<div class="swiper-img">
-										<img src="img/slide-1.jpg" alt="">
-									</div>
-									<div class="swiper-text">Виктория</div>
-								</a>
+								<div class="feedback__img">
+									<a class="feedback__popup" data-fancybox="feedback" href="img/feedback9.jpg"><img src="img/feedback9.jpg" alt=""></a>
+								</div>
 							</div>
 		
+							<div class="swiper-slide">
+								<div class="feedback__img">
+									<a class="feedback__popup" data-fancybox="feedback" href="img/feedback-1.png"><img src="img/feedback-1.png" alt=""></a>
+								</div>
+							</div>
 		
+							<div class="swiper-slide">
+								<div class="feedback__img">
+									<a class="feedback__popup" data-fancybox="feedback" href="img/feedback-1.png"><img src="img/feedback-1.png" alt=""></a>
+								</div>
+							</div>
+		
+							<div class="swiper-slide">
+								<div class="feedback__img">
+									<a class="feedback__popup" data-fancybox="feedback" href="img/feedback-1.png"><img src="img/feedback-1.png" alt=""></a>
+								</div>
+							</div>
+		
+							<div class="swiper-slide">
+								<div class="feedback__img">
+									<a class="feedback__popup" data-fancybox="feedback" href="img/feedback-1.png"><img src="img/feedback-1.png" alt=""></a>
+								</div>
+							</div>
 		
 						</div>
-		
+						<div class="swiper-pagination"></div>
 					</div>
 		
-					<div class="slider-button-prev">
-						<svg aria-hidden="true" focusable="false" width="13" height="25" xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 454.68 841.89">
-							<path fill="#fff"
-								d="M9.59 444.05 399 832.37a32.64 32.64 0 0 0 46.09-46.22L78.86 420.94l366.23-365.2A32.64 32.64 0 0 0 399 9.53L9.59 397.84a32.63 32.63 0 0 0 0 46.21Z">
-							</path>
-						</svg>
-					</div>
-					<div class="slider-button-next">
-						<svg aria-hidden="true" focusable="false" width="13" height="25" xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 454.68 841.89">
-							<path fill="#fff"
-								d="M445.09 397.84 55.69 9.52A32.64 32.64 0 0 0 9.6 55.74L375.82 421 9.59 786.15a32.64 32.64 0 0 0 46.1 46.21l389.4-388.31a32.63 32.63 0 0 0 0-46.21Z">
-							</path>
-						</svg>
-					</div>
+					
 		
 				</div>
 		
@@ -198,6 +203,7 @@
 	<!-- scripts -->
 	<script src='js/jquery.min.js'></script>
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<!-- end scripts -->
 
