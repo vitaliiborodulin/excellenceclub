@@ -6,17 +6,48 @@
 		padding-top: 30px;
 	});
 
-	.section__title {
-		margin-bottom: 20px;
+	h2 {
+			margin-bottom: 15px;
+			font-size: 27px;
+			line-height: 1.2;
+			font-weight: 300;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+
+	ul li{
+		list-style: disc;
+		list-style-position: inside;
 	}
 
-	&__descr {
-		margin-bottom: 40px;
-		text-align: center;
+	p {
+		// text-align: center;
 		font-weight: 300;
 		font-size: 15px;
 		line-height: 2;
 
 		.md(margin-bottom, 25px);
+	}
+
+	.advantages p {
+		font-size: 16px;
+		line-height: 1.85;
+		font-weight: 300;
+		text-align: left;
+	}
+}
+
+.home {
+	.about {
+		h2 {
+			margin-bottom: 20px;
+			font-size: 30px;
+			line-height: 1.067;
+	
+			.md(margin-bottom, 18px);
+		}
+		h2+p {
+			margin-bottom: 40px;
+		}
 	}
 }
