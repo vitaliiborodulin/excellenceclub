@@ -164,8 +164,8 @@ body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 2;
   font-weight: 300;
   color: #000000;
   text-rendering: optimizeSpeed;
@@ -190,6 +190,17 @@ main {
 
 .single .models .section__title {
   text-align: center;
+}
+
+.has-text-align-center {
+  text-align: center;
+}
+
+.wp-block-columns {
+  display: flex;
+  gap: 1em;
+  flex-wrap: nowrap;
+  align-items: flex-start !important;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
@@ -329,30 +340,37 @@ input[type='submit'] {
   margin-left: -15px;
   margin-right: -15px;
   justify-content: space-evenly;
+  align-items: stretch!important;
+  flex-wrap: wrap!important;
 }
 
-.advantages__item {
+.advantages > * {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
   width: calc(33.333333333333336% - 30px);
-  margin-bottom: 23px;
+  margin-bottom: 23px!important;
   padding: 29px 33px 25px 37px;
   border: 2px solid #b7a57e;
 }
 
-.advantages__title {
+.advantages h3 {
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: 300;
   line-height: 1;
 }
 
-.advantages__descr {
+.advantages p {
   font-size: 16px;
   line-height: 1.85;
   font-weight: 300;
+}
+
+.wp-block-columns + .advantages {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .header {
@@ -436,16 +454,41 @@ input[type='submit'] {
   padding-bottom: 25px;
 }
 
-.about .section__title {
-  margin-bottom: 20px;
+.about h2 {
+  margin-bottom: 15px;
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.about__descr {
-  margin-bottom: 40px;
-  text-align: center;
+.about ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.about p {
   font-weight: 300;
   font-size: 15px;
   line-height: 2;
+}
+
+.about .advantages p {
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 300;
+  text-align: left;
+}
+
+.home .about h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.067;
+}
+
+.home .about h2 + p {
+  margin-bottom: 40px;
 }
 
 .models {
@@ -646,6 +689,33 @@ input[type='submit'] {
   padding-bottom: 60px;
 }
 
+.post__content h2 {
+  margin-bottom: 15px;
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.post__content p + p,
+.post__content p + ul {
+  margin-top: 30px;
+}
+
+.post__content ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.post__content figure {
+  margin-top: 0;
+}
+
+.post__content .wp-block-columns + .wp-block-columns {
+  margin-top: 40px;
+}
+
 .feedback {
   padding-top: 32px;
   padding-bottom: 48px;
@@ -708,6 +778,12 @@ input[type='submit'] {
   height: 580px;
 }
 
+.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .footer {
   padding: 50px 0;
   color: #ffffff;
@@ -765,7 +841,7 @@ input[type='submit'] {
 }
 
 @media screen and (max-width: 1200px) {
-  .advantages__item {
+  .advantages > * {
     width: calc(66.66666666666667% - 30px);
   }
 
@@ -859,11 +935,11 @@ input[type='submit'] {
     margin-bottom: 15px;
   }
 
-  .advantages__item {
+  .advantages > * {
     width: calc(100% - 30px);
   }
 
-  .advantages__item {
+  .advantages > * {
     padding: 22px 33px 27px 21px;
   }
 
@@ -883,8 +959,12 @@ input[type='submit'] {
     padding-top: 30px;
   }
 
-  .about__descr {
+  .about p {
     margin-bottom: 25px;
+  }
+
+  .home .about h2 {
+    margin-bottom: 18px;
   }
 
   .models .models-button-prev {

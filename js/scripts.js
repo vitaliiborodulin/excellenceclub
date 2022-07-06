@@ -39,10 +39,10 @@ $(function() {
     	// loop: true,
     	slidesPerView: 1,
     	spaceBetween: 30,
-    	// autoplay: {
-    	// 	delay: 2500,
-    	// 	disableOnInteraction: false,
-    	// },
+    	autoplay: {
+    		delay: 2500,
+    		disableOnInteraction: false,
+    	},
     	breakpoints: {
     		678: {
     			slidesPerView: 2,
