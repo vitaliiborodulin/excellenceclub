@@ -716,6 +716,10 @@ input[type='submit'] {
   margin-top: 40px;
 }
 
+.post__content .wp-block-column:has(.wp-block-image) {
+  order: -1;
+}
+
 .feedback {
   padding-top: 32px;
   padding-bottom: 48px;
@@ -917,6 +921,24 @@ input[type='submit'] {
   .posts__descr {
     margin-bottom: 0;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 781px) {
+  .order {
+    order: -1;
+  }
+
+  .wp-block-columns {
+    flex-wrap: wrap;
+  }
+
+  .wp-block-image {
+    margin: 0;
+  }
+
+  .wp-block-columns > .wp-block-column {
+    flex-basis: 100%!important;
   }
 }
 

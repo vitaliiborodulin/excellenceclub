@@ -1,4 +1,7 @@
 $(function() {
+
+	$('.wp-block-column').has('.wp-block-image').addClass( 'order' );
+
     
     const modelsSlider = new Swiper('.models-slider', {
     	// Optional parameters
