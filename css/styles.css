@@ -172,7 +172,7 @@ body {
 }
 
 main {
-  min-height: 600px;
+  min-height: 750px;
 }
 
 .section__title {
@@ -203,6 +203,10 @@ main {
   align-items: flex-start !important;
 }
 
+body:not(.home) section {
+  padding-top: 22px;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
 
 *:focus:not(:focus-visible) {
@@ -215,6 +219,7 @@ input[type='submit'] {
 }
 
 .btn {
+  display: inline-block;
   padding: 20px 40px;
   font-size: 16px;
   font-weight: 300;
@@ -224,6 +229,8 @@ input[type='submit'] {
   background-color: transparent;
   transition: all 0.3s ease;
   border: 2px solid #b7a57e;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -611,7 +618,6 @@ input[type='submit'] {
 }
 
 .posts {
-  padding-top: 22px;
   padding-bottom: 40px;
 }
 
@@ -651,11 +657,6 @@ input[type='submit'] {
   font-size: 30px;
   line-height: 1;
   font-weight: 300;
-  min-height: 60px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .posts__descr {
@@ -685,7 +686,6 @@ input[type='submit'] {
 }
 
 .post {
-  padding-top: 32px;
   padding-bottom: 60px;
 }
 
@@ -721,7 +721,6 @@ input[type='submit'] {
 }
 
 .feedback {
-  padding-top: 32px;
   padding-bottom: 48px;
 }
 
@@ -914,7 +913,6 @@ input[type='submit'] {
 
   .posts__title {
     margin-bottom: 11px;
-    min-height: 48px;
     font-size: 24px;
   }
 
@@ -945,6 +943,10 @@ input[type='submit'] {
 @media screen and (max-width: 768px) {
   .section__title {
     margin-bottom: 18px;
+  }
+
+  body:not(.home) section {
+    padding-top: 10px;
   }
 
   .header__burger {
@@ -1002,7 +1004,6 @@ input[type='submit'] {
   }
 
   .posts {
-    padding-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -1026,12 +1027,10 @@ input[type='submit'] {
   }
 
   .post {
-    padding-top: 21px;
     padding-bottom: 40px;
   }
 
   .feedback {
-    padding-top: 21px;
     padding-bottom: 18px;
   }
 

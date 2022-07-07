@@ -67,7 +67,7 @@ $(function() {
     	feedbackSlider.slideNext();
     });
     $('[data-fancybox="feedback"]').fancybox({
-    	protect: true,
+    	// protect: true,
     	transitionEffect: "zoom-in-out",
     });
 });
