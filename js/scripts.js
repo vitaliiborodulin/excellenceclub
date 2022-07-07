@@ -66,8 +66,24 @@ $(function() {
     $('.feedback-button-next').on('click', function(){
     	feedbackSlider.slideNext();
     });
-    $('[data-fancybox="feedback"]').fancybox({
-    	// protect: true,
-    	transitionEffect: "zoom-in-out",
+    
+    // var swiper = new Swiper(".mySwiper", {
+    // 	spaceBetween: 10,
+    // 	slidesPerView: 4,
+    // 	freeMode: true,
+    // 	watchSlidesProgress: true,
+    // });
+    // var swiper2 = new Swiper(".mySwiper2", {
+    // 	spaceBetween: 10,
+    // 	navigation: {
+    // 		nextEl: ".swiper-button-next",
+    // 		prevEl: ".swiper-button-prev",
+    // 	},
+    // 	thumbs: {
+    // 		swiper: swiper,
+    // 	},
+    // });
+    Fancybox.bind("[data-fancybox]", {
+      // Your options go here
     });
 });
