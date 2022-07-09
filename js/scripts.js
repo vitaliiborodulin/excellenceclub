@@ -14,10 +14,10 @@ $(function() {
 		// keyboard: true,
 		// noSwiping: false,
 		// allowTouchMove: false,
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-		},
+		// autoplay: {
+		// 	delay: 2500,
+		// 	disableOnInteraction: false,
+		// },
 		breakpoints: {
 			992: {
 				slidesPerView: 3,
