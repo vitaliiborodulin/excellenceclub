@@ -241,6 +241,22 @@ input[type='submit'] {
   background-color: #b7a57e;
 }
 
+.submit-btn {
+  padding: 0 20px;
+  color: #ffffff;
+  background-color: #b7a57e;
+  font-size: 15px;
+  line-height: 40px;
+  height: 42px;
+}
+
+.submit-btn:hover,
+.submit-btn:active,
+.submit-btn:focus {
+  color: #b7a57e;
+  background-color: #ffffff;
+}
+
 .header__burger {
   display: none;
   z-index: 13;
@@ -339,6 +355,28 @@ input[type='submit'] {
 .breadcrumbs a:hover,
 .rank-math-breadcrumb a:hover {
   text-decoration: underline;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter__select {
+  width: 42%;
+  max-width: 210px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+}
+
+.nice-select {
+  border-radius: 0;
+  border: 2px solid #b7a57e;
+}
+
+.filter-btn {
+  width: 42%;
+  max-width: 210px;
+  margin-bottom: 18px;
 }
 
 .advantages {
@@ -787,6 +825,52 @@ input[type='submit'] {
   pointer-events: none;
 }
 
+.gallery__filter {
+  margin-bottom: 8px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.gallery__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(25% - 30px);
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gallery__item a {
+  text-decoration: none;
+}
+
+.gallery__item a:hover .models__name {
+  text-decoration: underline;
+}
+
+.gallery__item a:hover .models__img img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.gallery .models__img {
+  overflow: hidden;
+}
+
+.gallery .models__img img {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
 .footer {
   padding: 50px 0;
   color: #ffffff;
@@ -903,6 +987,10 @@ input[type='submit'] {
 }
 
 @media screen and (max-width: 992px) {
+  .filter {
+    flex-wrap: wrap;
+  }
+
   .posts__item {
     width: calc(50% - 30px);
   }
@@ -919,6 +1007,10 @@ input[type='submit'] {
   .posts__descr {
     margin-bottom: 0;
     font-size: 12px;
+  }
+
+  .gallery__item {
+    width: calc(33.333333333333336% - 30px);
   }
 }
 
@@ -957,6 +1049,18 @@ input[type='submit'] {
   .breadcrumbs,
   .rank-math-breadcrumb {
     margin-bottom: 15px;
+  }
+
+  .filter {
+    justify-content: space-between;
+  }
+
+  .filter__select {
+    margin: 0 5px 10px;
+  }
+
+  .filter-btn {
+    margin: 0 5px 10px;
   }
 
   .advantages > * {
@@ -1042,6 +1146,14 @@ input[type='submit'] {
     right: -10px;
   }
 
+  .gallery__item {
+    width: calc(50% - 30px);
+  }
+
+  .gallery__item {
+    margin-bottom: 25px;
+  }
+
   .footer {
     padding: 32px 0;
   }
@@ -1059,6 +1171,10 @@ input[type='submit'] {
 
   .btn {
     width: 100%;
+  }
+
+  .filter-btn {
+    width: 42%;
   }
 
   .hero {
