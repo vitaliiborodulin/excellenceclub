@@ -175,6 +175,14 @@ main {
   min-height: 750px;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .section__title {
   margin-bottom: 30px;
   font-size: 30px;
@@ -228,7 +236,7 @@ input[type='submit'] {
   color: #010101;
   background-color: transparent;
   transition: all 0.3s ease;
-  border: 2px solid #b7a57e;
+  border: 1px solid #b7a57e;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -242,12 +250,11 @@ input[type='submit'] {
 }
 
 .submit-btn {
-  padding: 0 20px;
+  padding: 5px 20px;
   color: #ffffff;
   background-color: #b7a57e;
   font-size: 15px;
-  line-height: 40px;
-  height: 42px;
+  line-height: 28px;
 }
 
 .submit-btn:hover,
@@ -370,13 +377,39 @@ input[type='submit'] {
 
 .nice-select {
   border-radius: 0;
-  border: 2px solid #b7a57e;
+  border: 1px solid #b7a57e;
 }
 
 .filter-btn {
   width: 42%;
   max-width: 210px;
   margin-bottom: 18px;
+}
+
+.form {
+  width: 542px;
+  max-width: 100%;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 5px 20px;
+  line-height: 28px;
+  margin-bottom: 18px;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid #b7a57e;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.form textarea.form__input {
+  resize: none;
+  height: 100px;
 }
 
 .advantages {
@@ -871,6 +904,10 @@ input[type='submit'] {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
+.membership .submit-btn {
+  width: 100%;
+}
+
 .footer {
   padding: 50px 0;
   color: #ffffff;
@@ -1061,6 +1098,10 @@ input[type='submit'] {
 
   .filter-btn {
     margin: 0 5px 10px;
+  }
+
+  .form__input {
+    margin-bottom: 14px;
   }
 
   .advantages > * {
