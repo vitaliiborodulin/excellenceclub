@@ -88,7 +88,15 @@ body {
 }
 
 main {
-	min-height: 600px;
+	min-height: 750px;
+}
+
+.m-auto {
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .section__title {
@@ -125,6 +133,26 @@ main {
 	gap: 1em;
 	flex-wrap: nowrap;
 	align-items: flex-start!important;
+}
+
+body:not(.home) section {
+	padding-top: 22px;
+	.md(padding-top, 10px);
+}
+
+@media (max-width: 781px){
+	.order {
+		order: -1;
+	}
+	.wp-block-columns {
+		flex-wrap: wrap;
+	}
+	.wp-block-image {
+		margin: 0;
+	}
+	.wp-block-columns>.wp-block-column {
+			flex-basis: 100%!important;
+	}
 }
 
 

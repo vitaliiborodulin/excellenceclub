@@ -1,11 +1,7 @@
 .post {
-	padding-top: 32px;
 	padding-bottom: 60px;
 
-	.md-block({
-		padding-top: 21px;
-		padding-bottom: 40px;
-	});
+	.md(padding-bottom, 40px);
 
 	&__content {
 		h2 {
@@ -32,6 +28,10 @@
 	
 		.wp-block-columns + .wp-block-columns {
 			margin-top: 40px;
+		}
+
+		.wp-block-column:has(.wp-block-image){
+			order: -1;
 		}
 	}
 }

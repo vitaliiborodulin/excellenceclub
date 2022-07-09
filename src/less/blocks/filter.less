@@ -1,0 +1,35 @@
+.filter {
+	display: flex;
+	// justify-content: space-between;
+	.lg(flex-wrap, wrap);
+	.md(justify-content, space-between);
+
+	&__select {
+		width: 42%;
+		max-width: 210px;
+		margin-right: 20px;
+		margin-bottom: 18px;
+		// margin: 0 10px 18px;
+		.md-block({
+			margin: 0 5px 10px;
+		});
+	}
+}
+
+.nice-select {
+	border-radius: 0;
+	border: 1px solid @accent;
+}
+
+.filter-btn {
+	width: 42%;
+	max-width: 210px;
+	// margin: 0 10px 18px;
+	margin-bottom: 18px;
+
+	.md-block({
+		margin: 0 5px 10px;
+	});
+
+	.sm(width, 42%);
+}

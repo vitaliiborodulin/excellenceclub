@@ -1,4 +1,5 @@
 .btn {
+	display: inline-block;
 	padding: 20px 40px;
 
 	font-size: 16px;
@@ -10,15 +11,36 @@
 	background-color: transparent;
 
 	transition: all 0.3s ease;
-	border: 2px solid @accent;
+	border: 1px solid @accent;
+	text-decoration: none;
+	text-align: center;
 	cursor: pointer;
 
-	.sm(width, 100%);
+	.sm-block({
+		width: 100%;
+	});
 
 	&:hover,
 	&:active,
 	&:focus {
 		color: @white;
 		background-color: @accent;
+	}
+}
+
+.submit-btn {
+	padding: 5px 20px;
+	color: @white;
+	background-color: @accent;
+
+	font-size: 15px;
+	line-height: 28px;
+	// height: 42px;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: @accent;
+		background-color: @white;
 	}
 }

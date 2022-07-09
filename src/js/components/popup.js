@@ -1,4 +1,3 @@
-$('[data-fancybox="feedback"]').fancybox({
-	protect: true,
-	transitionEffect: "zoom-in-out",
+Fancybox.bind("[data-fancybox]", {
+  // Your options go here
 });

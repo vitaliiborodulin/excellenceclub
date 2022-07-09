@@ -7,10 +7,10 @@ const modelsSlider = new Swiper('.models-slider', {
 	// keyboard: true,
 	// noSwiping: false,
 	// allowTouchMove: false,
-	autoplay: {
-		delay: 2500,
-		disableOnInteraction: false,
-	},
+	// autoplay: {
+	// 	delay: 2500,
+	// 	disableOnInteraction: false,
+	// },
 	breakpoints: {
 		992: {
 			slidesPerView: 3,
@@ -60,4 +60,21 @@ $('.feedback-button-prev').on('click', function(){
 
 $('.feedback-button-next').on('click', function(){
 	feedbackSlider.slideNext();
+});
+
+var swiper = new Swiper(".mySwiper", {
+	spaceBetween: 10,
+	slidesPerView: 4,
+	freeMode: true,
+	watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+	spaceBetween: 10,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+		swiper: swiper,
+	},
 });

@@ -1,0 +1,37 @@
+.visit {
+	width: 542px;
+	max-width: 100%;
+	text-align: center;
+
+	padding: 44px 20px;
+
+	color: @black;
+	background-color: @grey;
+
+	li+li {
+		margin-top: 20px;
+	}
+
+	&__title {
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	&__value {
+		a {
+			display: block;
+			font-size: 27px;
+			font-weight: 400;
+			color: @accent;
+			text-decoration: none;
+
+			.sm(font-size, 17px);
+
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+}
