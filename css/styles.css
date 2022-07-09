@@ -412,6 +412,38 @@ input[type='submit'] {
   height: 100px;
 }
 
+.visit {
+  width: 542px;
+  max-width: 100%;
+  text-align: center;
+  padding: 44px 20px;
+  color: #000000;
+  background-color: #f5f5f5;
+}
+
+.visit li + li {
+  margin-top: 20px;
+}
+
+.visit__title {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.visit__value a {
+  display: block;
+  font-size: 27px;
+  font-weight: 400;
+  color: #b7a57e;
+  text-decoration: none;
+}
+
+.visit__value a:hover,
+.visit__value a:active,
+.visit__value a:focus {
+  text-decoration: underline;
+}
+
 .advantages {
   display: flex;
   flex-wrap: wrap;
@@ -904,6 +936,14 @@ input[type='submit'] {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
+.membership {
+  padding-bottom: 44px;
+}
+
+.membership .form {
+  margin-bottom: 20px;
+}
+
 .membership .submit-btn {
   width: 100%;
 }
@@ -1195,6 +1235,10 @@ input[type='submit'] {
     margin-bottom: 25px;
   }
 
+  .membership {
+    padding-bottom: 39px;
+  }
+
   .footer {
     padding: 32px 0;
   }
@@ -1216,6 +1260,10 @@ input[type='submit'] {
 
   .filter-btn {
     width: 42%;
+  }
+
+  .visit__value a {
+    font-size: 17px;
   }
 
   .hero {
