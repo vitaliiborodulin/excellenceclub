@@ -4,7 +4,7 @@ $(function() {
 
 	$('select').niceSelect();
 
-	//= components/header.js
+	//= components/menu.js
 	//= components/slider.js
 	//= components/popup.js
 });

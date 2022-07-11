@@ -64,7 +64,7 @@ $('.feedback-button-next').on('click', function(){
 
 var swiper = new Swiper(".mySwiper", {
 	spaceBetween: 10,
-	slidesPerView: 4,
+	slidesPerView: 3,
 	freeMode: true,
 	watchSlidesProgress: true,
 });

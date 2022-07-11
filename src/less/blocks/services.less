@@ -1,0 +1,38 @@
+.services {
+	&__list {
+		padding-top: 67px;
+		.row-flex();
+	}
+	&__item {
+		.col();
+		.size(6);
+		.size-lg(12);
+		margin-bottom: 24px;
+		padding: 35px;
+		background-color: @grey;
+		// border: 1px solid #000;
+
+		.md-block({
+			padding: 26px;
+		});
+
+		.btn {
+			padding: 5px 20px;
+		}
+	}
+
+	&__header {
+		margin-bottom: 10px;
+		font-size: 27px;
+		font-weight: 300;
+		line-height: 1.33;
+		color: @accent;
+		text-transform: uppercase;
+	}
+
+	&__descr {
+		margin-bottom: 18px;
+		font-size: 15px;
+	}
+
+}
