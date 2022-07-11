@@ -4,7 +4,21 @@ $(function() {
 
 	$('select').niceSelect();
 
+	const burger = $('.header__burger');
+	const menu = $('.header__nav');
 	
+	burger.on('click', function(e) {
+	    e.preventDefault();
+	    burger.toggleClass('header__burger--close');
+	    menu.toggleClass('open');
+	});
+	
+	$(document).keyup(function(e) {
+	    if (e.key === "Escape" || e.keyCode === 27) {
+	        menu.removeClass('open');
+	        burger.removeClass('header__burger--close');
+	    }
+	});
 	const modelsSlider = new Swiper('.models-slider', {
 		// Optional parameters
 		loop: true,
@@ -71,7 +85,7 @@ $(function() {
 	
 	var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 10,
-		slidesPerView: 4,
+		slidesPerView: 3,
 		freeMode: true,
 		watchSlidesProgress: true,
 	});
