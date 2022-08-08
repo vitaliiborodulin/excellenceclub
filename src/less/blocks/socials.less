@@ -1,0 +1,30 @@
+.socials {
+
+	a {
+		margin-right: 5px;
+		text-decoration: none;
+		color: @accent;
+		transition: color 0.5s ease;
+	}
+}
+
+.header {
+	.socials {
+		position: absolute;
+		bottom: -25px;
+		left: 15px;
+
+		.md-block({
+			left: 35%;
+			bottom: unset;
+			top: -28px;
+			z-index: 12;
+		});
+
+		a {
+			&:hover {
+				color: @black;
+			}
+		}
+	}
+}
